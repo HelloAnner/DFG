@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"os"
 	"net/http"
+	"os"
 )
 
 func main() {
