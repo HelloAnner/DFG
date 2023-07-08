@@ -7,7 +7,6 @@ import (
 	"github.com/cloudwego/hertz/pkg/app/server"
 	"github.com/cloudwego/hertz/pkg/common/hlog"
 	"github.com/cloudwego/hertz/pkg/protocol/consts"
-	"net/http"
 )
 
 // https://www.cloudwego.io/zh/docs/hertz/tutorials/basic-feature/middleware/recovery/
@@ -22,7 +21,6 @@ func main() {
 
 	h.GET("/test", func(ctx context.Context, c *app.RequestContext) {
 		panic("test")
-		c.String(http.StatusOK, "test interface")
 	})
 
 	h.Spin()
