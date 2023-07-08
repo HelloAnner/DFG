@@ -5,8 +5,7 @@ import "testing"
 //
 // @author Anner on 2021/10/6
 
-
-func TestMemento(t *testing.T){
+func TestMemento(t *testing.T) {
 	game := Game{
 		hp: 10,
 		mp: 20,
@@ -14,7 +13,7 @@ func TestMemento(t *testing.T){
 	game.Status()
 	progress := game.Save()
 
-	game.Play(-2,-3)
+	game.Play(-2, -3)
 	game.Status()
 
 	game.Load(progress)

@@ -5,7 +5,7 @@ import "testing"
 //
 // @author Anner on 2021/10/6
 
-func TestChain(t *testing.T){
+func TestChain(t *testing.T) {
 	c1 := NewProjectManagerChain()
 	c2 := NewDepManagerChain()
 	c3 := NewGeneralManagerChain()

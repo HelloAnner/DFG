@@ -1,4 +1,4 @@
-package mono_redis
+package redis_demo
 
 import (
 	"github.com/go-redis/redis"

@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	hello_grpc "dfg/rpc/service"
+	hello_grpc "dfg/rpc_demo/service"
 	"fmt"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
@@ -28,7 +28,7 @@ func main() {
 		return
 	}
 
-	// rpc server
+	// rpc_demo server
 	s := grpc.NewServer()
 	// register service
 	hello_grpc.RegisterGreeterServer(s, &server{})

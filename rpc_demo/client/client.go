@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	hello_grpc "dfg/rpc/service"
+	hello_grpc "dfg/rpc_demo/service"
 	"fmt"
 	"google.golang.org/grpc"
 )

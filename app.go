@@ -1,17 +1,17 @@
 package main
 
 import (
-	"dfg/mono_redis"
+	"dfg/redis_demo"
 	"fmt"
 	"time"
 )
 
 func main() {
-	mono_redis.Sub("test", func(msg string) {
+	redis_demo.Sub("test", func(msg string) {
 		fmt.Println("receive " + msg)
 	})
 
-	mono_redis.Pub("test", "This is a test")
+	redis_demo.Pub("test", "This is a test")
 
 	time.Sleep(1 * time.Second)
 }

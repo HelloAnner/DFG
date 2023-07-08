@@ -10,7 +10,7 @@ import "fmt"
 
 type Manager interface {
 	HaveRight(money int) bool
-	HandleFeeRequest(name string,money int) bool
+	HandleFeeRequest(name string, money int) bool
 }
 
 type RequestChain struct {
@@ -18,7 +18,7 @@ type RequestChain struct {
 	successor *RequestChain
 }
 
-func (r *RequestChain)SetSuccessor(m *RequestChain){
+func (r *RequestChain) SetSuccessor(m *RequestChain) {
 	r.successor = m
 }
 
@@ -98,5 +98,3 @@ func (*GeneralManager) HandleFeeRequest(name string, money int) bool {
 	fmt.Printf("General manager don't permit %s %d fee request\n", name, money)
 	return false
 }
-
-

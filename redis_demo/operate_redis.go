@@ -1,4 +1,4 @@
-package mono_redis
+package redis_demo
 
 // redis 的一些基础操作
 
