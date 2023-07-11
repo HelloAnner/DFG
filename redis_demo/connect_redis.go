@@ -17,7 +17,7 @@ func ConnectRedis() *redis.Client {
 	redisOnce.Do(func() {
 		redisClient = redis.NewClient(&redis.Options{
 			Addr:         "anner.wang:16379",
-			Password:     "Anner_login_123",
+			Password:     "",
 			DB:           0,
 			MaxRetries:   10,
 			PoolSize:     50,
